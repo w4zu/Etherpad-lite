@@ -6,7 +6,7 @@ homedir=/home/ # folder to install etherpad.
 users=username # Username use for etherpad dont use root.
 myvhost="/etc/apache2/sites-enabled/etherpad_$domain.conf" # Its apache2 file configuration by default.
 #Install NodeJS
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt install -y nodejs
 #change folder to install etherpad
 cd $homedir
